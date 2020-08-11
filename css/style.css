@@ -1,0 +1,209 @@
+@import 'utilities.css';
+
+/*Header*/
+header {
+    width: 100%;
+    position: relative;
+}
+
+.backcover {
+    width: 100%;
+    height: 250px;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 130px
+}
+
+.dropdown-btn {
+    margin-right: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+}
+
+nav button i {
+    color: var(--pure);
+    font-size: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    right: 60px;
+    background: transparent;
+    width: 180px;
+    z-index: 1;
+    display: none;
+}
+
+.dropdown-content a {
+    color: var(--pure);
+    background: var(--highlight);
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.dropdown-content a:hover {
+    background: var(--darkText);
+}
+
+.show {
+    display: block;
+}
+
+/*Content*/
+.S1 {
+    position: relative;
+    background: url(../image/cover.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin:50px auto 0;
+    object-fit: cover;
+    text-align: center;
+}
+
+.quote {
+    margin: 25px auto 0;
+}
+
+.quote i {
+    color: rgb(1, 54, 134);
+}
+
+.quote h1 {
+    margin: 30px auto;
+    font-style: italic;
+    font-family: Times New Roman, Times, serif;
+}
+
+.midImg1 {
+    width: 60%;
+    margin: 50px auto 10px;
+}
+
+.midImg1 img, .midImg2 img {
+    width: 100%;
+    height: 400px;
+}
+
+.midImg2 {
+    width: 60%;
+    margin: 0 auto 10px;
+}
+
+.QRcode {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.QRcode img {
+    height: 120px;
+    width: 120px;
+    margin: 20px;
+}
+
+.QRcode p, .footer p {
+    font-size: 1em;
+    letter-spacing: 0.7px;
+    font-weight: 100;
+}
+
+.footer {
+    background:var(--pure);
+    padding: 20px;
+}
+
+.footer img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.footer p a {
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1, h2, p {
+        font-size: 18px;
+    }
+    .backcover {
+        height: 150px;
+    }
+    .block {
+        padding: 40px auto;
+    }
+    .midImg1 img, .midImg2 img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1, h2, p {
+        font-size: 16px;
+    }
+    .backcover {
+        height: 80px;
+    }
+    nav img {
+        height: 70px
+    }
+    .dropdown-btn {
+        padding: 0 auto;
+        margin-right: 0;
+    }
+    .dropdown-content {
+        right: 30px;
+    }
+    .block {
+        width: 95%;
+        padding: 40px auto;
+    }
+    .S1 {
+        margin: 0 auto;
+    }
+    .midImg1, .midImg2 {
+        width: 70%;
+    }
+    .midImg1 img, .midImg2 img {
+        width: 100%;
+        height: 150px;
+    }
+    .QRcode {
+        width: 80%;
+    }
+    .QRcode p {
+        font-size: 12px;
+    }
+    .footer p {
+        font-size: 10px;
+    }
+}
